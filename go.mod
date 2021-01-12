@@ -1,4 +1,4 @@
-module github.com/google/go-github/marketplace_purchase
+module github.com/google/go-github
 
 require (
 	github.com/golang/protobuf v1.3.2 // indirect
