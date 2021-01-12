@@ -7267,6 +7267,16 @@ func TestMarketplacePurchase_GetUnitCount(tt *testing.T) {
 	m.GetUnitCount()
 }
 
+func TestMarketplacePurchase_GetUpdatedAt(tt *testing.T) {
+	var zeroValue Timestamp
+	m := &MarketplacePurchase{UpdatedAt: &zeroValue}
+	m.GetUpdatedAt()
+	m = &MarketplacePurchase{}
+	m.GetUpdatedAt()
+	m = nil
+	m.GetUpdatedAt()
+}
+
 func TestMarketplacePurchaseEvent_GetAction(tt *testing.T) {
 	var zeroValue string
 	m := &MarketplacePurchaseEvent{Action: &zeroValue}

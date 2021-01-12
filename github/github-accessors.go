@@ -6204,6 +6204,14 @@ func (m *MarketplacePurchase) GetUnitCount() int {
 	return *m.UnitCount
 }
 
+// GetUpdatedAt returns the UpdatedAt field if it's non-nil, zero value otherwise.
+func (m *MarketplacePurchase) GetUpdatedAt() Timestamp {
+	if m == nil || m.UpdatedAt == nil {
+		return Timestamp{}
+	}
+	return *m.UpdatedAt
+}
+
 // GetAction returns the Action field if it's non-nil, zero value otherwise.
 func (m *MarketplacePurchaseEvent) GetAction() string {
 	if m == nil || m.Action == nil {
